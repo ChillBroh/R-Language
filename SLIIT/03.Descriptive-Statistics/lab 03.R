@@ -69,6 +69,13 @@ barplot(gender_Acc.freq,beside = TRUE, main = "Clustered Barchart for gender and
         ylab="frequency", xlab = "types", legend=row.names(gender_Acc.freq))
 
 
+#Q4
+#side by side boxplot
+boxplot(Age~Gender, main= " boxplot for age by gender",horizontal = TRUE,outpch=18)
+boxplot(Age~Accommodation, main = "boxplot for age by accommodation", horizontal=TRUE,outpch=18)
+
+
+
 
 
 
