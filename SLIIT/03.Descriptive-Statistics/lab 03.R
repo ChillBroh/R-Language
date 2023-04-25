@@ -56,6 +56,21 @@ boxplot(gender.freq, main = "Boxplot for Gender", xlab = "Gender", horizontal = 
 
 
 
+#Q3
+gender_Acc.freq <- table(Gender,Accommodation)
+gender_Acc.freq
+
+pie(gender_Acc.freq, main = "Pie chart for gender and accommodation")
+#stack barcharts
+barplot(gender_Acc.freq,main = "Bar plot for gender and accommodation", ylab = "frequency" , xlab= "types", legend = row.names(gender_Acc.freq))
+
+#clustered barcharts
+barplot(gender_Acc.freq,beside = TRUE, main = "Clustered Barchart for gender and accommodation",
+        ylab="frequency", xlab = "types", legend=row.names(gender_Acc.freq))
+
+
+
+
 
 
 
