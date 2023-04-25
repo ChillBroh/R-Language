@@ -26,7 +26,33 @@ fix(dataLab3)
 attach(dataLab3)
 dataLab3
 
+#2
+#Frequency table
+gender.freq <- table(Gender)
+acc.freq <- table(Accommodation)
+acc <- table(Accommodation)
+age.frq <- table(Age)
 
+acc
+acc.freq
+gender.freq
+
+#piechart
+pie(acc,main= "Pie chart for Accommodation")
+pie(gender.freq, main="Pie chart for Gender")
+pie(age.frq,main = "Pie Chart For Age")
+
+#barplot
+barplot(acc, main = "Bar Plot for Accommodation", ylab = "Frequency")
+barplot(gender.freq, main = "Bar Plot for Gender", ylab = "Frequency")
+barplot(age.frq, main = "Bar Plot for Age", ylab = "Frequency")
+abline(h=10)
+#abline(h=0) can start x axis from 0
+
+#boxPlot
+boxplot(age.frq, main = "BoxPlot for Age",xlab ="Age", outline = TRUE,horizontal = TRUE)
+boxplot(acc,main="Boxplot for Accommodation",xlab="Accommodation",outline = TRUE,horizontal = TRUE)
+boxplot(gender.freq, main = "Boxplot for Gender", xlab = "Gender", horizontal = TRUE, outline = TRUE)
 
 
 
