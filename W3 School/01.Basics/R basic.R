@@ -115,3 +115,4 @@ tri_recursion <- function(k) {
   }
 }
 tri_recursion(6)
+
