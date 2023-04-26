@@ -59,17 +59,17 @@ cumulative <- cumsum(counts)
 cumulative
 
 cumPolygon <- c()
-
-for(i in 1:length(breaks)-1){
-  if(i == 0){
+cumPolygon
+for(i in 1:length(breaks)){
+  if(i == 1){
     cumPolygon[i] = 0
   }else{
-  cumPolygon[i] <- cumulative[i]
+  cumPolygon[i] <- cumulative[i-1]
   }
 }
-cbind(classes= classes, Frequency = cumulative)
+cbind(upper=breaks, Frequency = cumPolygon)
 
-plot(breaks,cumPolygon,type = "l", main= "Frequency polygon for shareholders count",
+plot(breaks,cumPolygon,type = "o", main= "Frequency polygon for shareholders count",
      xlab="Share holders", ylab="frequency", ylim = c(0,max(cumulative)))
 
 
