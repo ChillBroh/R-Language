@@ -2,11 +2,12 @@ setwd("C:\\Users\\ishar\\Documents\\Languages\\Low level\\SLIIT\\04.Descriptive 
 
 dataSet <- read.table("DATA 4.txt",header=TRUE)
 fix(dataSet)
-
+dataSet
 #rename 
 names(dataSet) <- c("Team","Attendance","Team Salary", "Years")
 fix(dataSet)
 
+#access variables dirrectly without typing dataSet$Attendance like wise
 attach(dataSet)
 #2
 #a
