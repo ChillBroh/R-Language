@@ -41,3 +41,47 @@ sd(Attendance)
 sd(`Team Salary`)
 sd(Years)
 
+#c
+#summary
+summary(Attendance)
+summary(`Team Salary`)
+summary(Years)
+#quantile
+quantile(Attendance)
+quantile(`Team Salary`)
+quantile(Years)
+#1st Q
+quantile(Attendance)[2]
+summary(Attendance)[2]
+
+quantile(`Team Salary`)[2]
+summary(`Team Salary`)[2]
+
+quantile(Years)[2]
+summary(Years)[2]
+
+#2nd Q
+quantile(Attendance)[3]
+summary(Attendance)[3]
+
+quantile(`Team Salary`)[3]
+summary(`Team Salary`)[3]
+
+quantile(Years)[3]
+summary(Years)[3]
+
+#IQR
+IQR(Attendance)
+IQR(`Team Salary`)
+IQR(Years)
+
+
+
+
+
+
+
+
+
+
+
