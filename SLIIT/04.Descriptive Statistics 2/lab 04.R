@@ -25,3 +25,19 @@ stem(Attendance)
 stem(`Team Salary`)
 stem(Years)
 
+#b
+#mean
+mean(Attendance)
+mean(`Team Salary`)
+mean(Years)
+
+#median
+median(Attendance)
+median(`Team Salary`)
+median(Years)
+
+#standered Deviation
+sd(Attendance)
+sd(`Team Salary`)
+sd(Years)
+
